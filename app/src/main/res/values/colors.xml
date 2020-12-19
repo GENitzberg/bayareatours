@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E015B5</color>
+    <color name="colorPrimaryDark">#6F1F5E</color>
+    <color name="colorAccent">#E18DCF</color>
+
+    <color name="category_events">#E5BEDD</color>
+    <color name="category_hiking">#CA6435</color>
+    <color name="category_parks">#329D2A</color>
+    <color name="category_restaurants">#A765DB</color>
+</resources>

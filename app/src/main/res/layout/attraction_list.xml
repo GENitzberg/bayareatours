@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding_margin"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:id="@+id/attraction_image_view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/attraction_image_view"
+        android:id="@+id/textLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/attraction_name_text_view"
+            tools:text="Attraction Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="@dimen/padding_margin"
+            android:paddingLeft="@dimen/padding_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/attraction_address_text_view"
+            tools:text="Attraction Address"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingLeft="@dimen/padding_margin"/>
+    </LinearLayout>
+</RelativeLayout>

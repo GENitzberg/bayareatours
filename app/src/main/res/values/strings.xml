@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">bayAreaTours</string>
+    <string name="attr_events">Bay Area Events</string>
+    <string name="attr_hiking">Bay Area Hikes</string>
+    <string name="attr_parks">Bay Area Parks</string>
+    <string name="attr_restaurants">Bay Area Restaurants</string>
+</resources>
