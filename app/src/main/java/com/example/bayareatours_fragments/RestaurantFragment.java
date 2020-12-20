@@ -26,17 +26,23 @@ public class RestaurantFragment extends Fragment {
         //Create an array of all of the hiking trails that will appear on this view
         //All icons taken from https://material.io/resources/icons/
         final ArrayList<Attraction> restaurantsArray = new ArrayList<>();
-        restaurantsArray.add(new Attraction("Teaspoon", "134-A Castro St.",
+        restaurantsArray.add(new Attraction(getString(R.string.teaspoon),
+                getString(R.string.teaspoon_address),
                 R.drawable.baseline_wine_bar_white_48dp));
-        restaurantsArray.add(new Attraction("Oren's Hummus", "126 Castro St.",
+        restaurantsArray.add(new Attraction(getString(R.string.orens),
+                getString(R.string.orens_address),
                 R.drawable.baseline_restaurant_white_48dp));
-        restaurantsArray.add(new Attraction("Opa!", "110 Lincoln Ave.",
+        restaurantsArray.add(new Attraction(getString(R.string.opa),
+                getString(R.string.opa_address),
                 R.drawable.baseline_flag_white_48dp));
-        restaurantsArray.add(new Attraction("Crepevine", "367 University Ave.",
+        restaurantsArray.add(new Attraction(getString(R.string.crepe),
+                getString(R.string.crepe_address),
                 R.drawable.baseline_restaurant_white_48dp));
-        restaurantsArray.add(new Attraction("Cafe 220", "220 University Ave.",
+        restaurantsArray.add(new Attraction(getString(R.string.cafe),
+                getString(R.string.cafe_address),
                 R.drawable.baseline_sentiment_satisfied_alt_white_48dp));
-        restaurantsArray.add(new Attraction("Italian Deli", "9873 Main St.",
+        restaurantsArray.add(new Attraction(getString(R.string.deli),
+                getString(R.string.deli_address),
                 R.drawable.baseline_restaurant_white_48dp));
 
         //Using the AttractionAdapter to list the event lists

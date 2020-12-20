@@ -1,11 +1,28 @@
 package com.example.bayareatours_fragments;
 
+import android.content.Context;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class NewFragmentPagerAdapter extends FragmentPagerAdapter {
+    final int PAGE_COUNT = 3;
+    private String tabTitles[] = new String[] { "Events", "Hiking", "Parks", "Food" };
+    private Context context;
+
+    public NewFragmentPagerAdapter(FragmentManager fm, Context context) {
+        super(fm);
+        this.context = context;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        // Generate title based on item position
+        return tabTitles[position];
+    }
+
     public NewFragmentPagerAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }

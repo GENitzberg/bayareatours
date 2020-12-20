@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -31,18 +32,24 @@ public class EventsFragment extends Fragment {
         //All icons taken from https://material.io/resources/icons/
         //Number_two icon from the Miwok App example is used for Farmers Market icon
         final ArrayList<Attraction> eventsArray = new ArrayList<>();
-        eventsArray.add(new Attraction("Arts and Wine Festival", "222 Castro St.",
+        eventsArray.add(new Attraction(getString(R.string.artandwine),
+                getString(R.string.artandwine_address),
                 R.drawable.baseline_wine_bar_white_48dp));
-        eventsArray.add(new Attraction("Comic-Con", "123 Main St.",
+        eventsArray.add(new Attraction(getString(R.string.comiccon),
+                getString(R.string.comicon_address),
                 R.drawable.baseline_sentiment_satisfied_alt_white_48dp));
-        eventsArray.add(new Attraction("Plane Show", "19 Plane St.",
+        eventsArray.add(new Attraction(getString(R.string.plane),
+                getString(R.string.plane_address),
                 R.drawable.baseline_flight_takeoff_white_48dp));
-        eventsArray.add(new Attraction("Car Show", "4643 Faster Rd.",
+        eventsArray.add(new Attraction(getString(R.string.car),
+                getString(R.string.car_address),
                 R.drawable.baseline_directions_car_white_48dp));
-        eventsArray.add(new Attraction("Farmers Market", "100 Castro St.",
+        eventsArray.add(new Attraction(getString(R.string.farmers),
+                getString(R.string.farmers_address),
                 R.drawable.number_two));
-        eventsArray.add(new Attraction("Spare the Air!", "Entire Bay Area",
-                R.drawable.baseline_nature_people_white_48dp));
+        eventsArray.add(new Attraction(getString(R.string.air),
+                getString(R.string.air_address),
+                R.drawable.baseline_sentiment_satisfied_alt_white_48dp));
 
         //Using the AttractionAdapter to list the event lists
         AttractionAdapter adapter = new AttractionAdapter((AppCompatActivity) getActivity(), eventsArray, R.color.category_events);

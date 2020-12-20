@@ -26,18 +26,24 @@ public class HikingFragment extends Fragment {
         //Create an array of all of the hiking trails that will appear on this view
         //All icons taken from https://material.io/resources/icons/
         final ArrayList<Attraction> hikesArray = new ArrayList<>();
-        hikesArray.add(new Attraction("Hidden Villa", "26870 Moody Rd.",
+        hikesArray.add(new Attraction(getString(R.string.villa),
+                getString(R.string.villa_address),
                 R.drawable.baseline_nature_people_white_48dp));
-        hikesArray.add(new Attraction("Las Trampas", "123 Bollinger Canyon Rd.",
+        hikesArray.add(new Attraction(getString(R.string.las),
+                getString(R.string.las_address),
                 R.drawable.baseline_local_florist_white_48dp));
-        hikesArray.add(new Attraction("Rancho San Antonio", "23500 Cristo Rey Dr.",
+        hikesArray.add(new Attraction(getString(R.string.rancho),
+                getString(R.string.rancho_address),
                 R.drawable.baseline_nature_people_white_48dp));
-        hikesArray.add(new Attraction("The Dish", "1100 Stanford Ave.",
-                R.drawable.baseline_directions_run_white_48dp));
-        hikesArray.add(new Attraction("Bay Trail", "293 Caribbean Dr.",
-                R.drawable.baseline_directions_bike_white_48dp));
-        hikesArray.add(new Attraction("Permanente Creek Trail ", "1019 Sierra Dr.",
+        hikesArray.add(new Attraction(getString(R.string.dish),
+                getString(R.string.dish_address),
                 R.drawable.baseline_filter_vintage_white_48dp));
+        hikesArray.add(new Attraction(getString(R.string.bay),
+                getString(R.string.bay_address),
+                R.drawable.baseline_nature_people_white_48dp));
+        hikesArray.add(new Attraction(getString(R.string.perm),
+                getString(R.string.perm_address),
+                R.drawable.baseline_sentiment_satisfied_alt_white_48dp));
 
         //Using the AttractionAdapter to list the event lists
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), hikesArray, R.color.category_hiking);
