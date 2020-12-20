@@ -17,19 +17,21 @@ public class EventsActivity extends AppCompatActivity {
         setContentView(R.layout.attraction_list_activity);
 
         //Create an array of all of the events that will appear on this view
+        //All icons taken from https://material.io/resources/icons/
+        //Number_two icon from the Miwok App example is used for Farmers Market icon
         final ArrayList<Attraction> eventsArray = new ArrayList<>();
         eventsArray.add(new Attraction("Arts and Wine Festival", "222 Castro St.",
-                R.drawable.number_two));
+                R.drawable.baseline_wine_bar_white_48dp));
         eventsArray.add(new Attraction("Comic-Con", "123 Main St.",
-                R.drawable.number_two));
+                R.drawable.baseline_sentiment_satisfied_alt_white_48dp));
         eventsArray.add(new Attraction("Plane Show", "19 Plane St.",
-                R.drawable.number_two));
+                R.drawable.baseline_flight_takeoff_white_48dp));
         eventsArray.add(new Attraction("Car Show", "4643 Faster Rd.",
-                R.drawable.number_two));
+                R.drawable.baseline_directions_car_white_48dp));
         eventsArray.add(new Attraction("Farmers Market", "100 Castro St.",
                 R.drawable.number_two));
         eventsArray.add(new Attraction("Spare the Air!", "Entire Bay Area",
-                R.drawable.number_two));
+                R.drawable.baseline_nature_people_white_48dp));
 
 
         //Using the AttractionAdapter to list the event lists
