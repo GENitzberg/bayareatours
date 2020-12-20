@@ -12,4 +12,4 @@
     android:paddingTop="@dimen/padding_margin"
     android:layout_marginTop="@dimen/padding_margin"
     android:layout_marginBottom="@dimen/padding_margin"
-    android:drawSelectorOnTop="true"/>
+    android:drawSelectorOnTop="true" />

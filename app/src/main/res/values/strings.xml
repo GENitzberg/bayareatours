@@ -4,4 +4,6 @@
     <string name="attr_hiking">Bay Area Hikes</string>
     <string name="attr_parks">Bay Area Parks</string>
     <string name="attr_restaurants">Bay Area Restaurants</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

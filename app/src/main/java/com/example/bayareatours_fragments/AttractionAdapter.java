@@ -1,7 +1,6 @@
-package com.example.bayareatours;
+package com.example.bayareatours_fragments;
 
 import android.app.Activity;
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-import org.w3c.dom.Attr;
-
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class AttractionAdapter extends ArrayAdapter<Attraction> {

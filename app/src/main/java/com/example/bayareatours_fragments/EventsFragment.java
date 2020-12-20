@@ -1,20 +1,31 @@
-package com.example.bayareatours;
+package com.example.bayareatours_fragments;
 
 import android.os.Bundle;
-import android.widget.ListView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
-import org.w3c.dom.Attr;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class EventsActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ * create an instance of this fragment.
+ */
+public class EventsFragment extends Fragment {
+
+    public EventsFragment() {
+        // Required empty public constructor
+    }
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.attraction_list_activity);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.attraction_list_activity, container, false);
 
         //Create an array of all of the events that will appear on this view
         //All icons taken from https://material.io/resources/icons/
@@ -33,11 +44,10 @@ public class EventsActivity extends AppCompatActivity {
         eventsArray.add(new Attraction("Spare the Air!", "Entire Bay Area",
                 R.drawable.baseline_nature_people_white_48dp));
 
-
         //Using the AttractionAdapter to list the event lists
-        AttractionAdapter adapter = new AttractionAdapter(this, eventsArray, R.color.category_events);
-        ListView listView = (ListView) findViewById(R.id.list);
+        AttractionAdapter adapter = new AttractionAdapter((AppCompatActivity) getActivity(), eventsArray, R.color.category_events);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
-
+        return rootView;
     }
 }

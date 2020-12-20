@@ -1,19 +1,27 @@
-package com.example.bayareatours;
+package com.example.bayareatours_fragments;
 
 import android.os.Bundle;
-import android.widget.ListView;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class HikingActivity extends AppCompatActivity {
+public class HikingFragment extends Fragment {
+
+    public HikingFragment() {
+        // Required empty public constructor
+    }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.attraction_list_activity);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.attraction_list_activity, container, false);
 
         //Create an array of all of the hiking trails that will appear on this view
         //All icons taken from https://material.io/resources/icons/
@@ -32,9 +40,12 @@ public class HikingActivity extends AppCompatActivity {
                 R.drawable.baseline_filter_vintage_white_48dp));
 
         //Using the AttractionAdapter to list the event lists
-        AttractionAdapter adapter = new AttractionAdapter(this, hikesArray, R.color.category_hiking);
-        ListView listView = (ListView) findViewById(R.id.list);
+        AttractionAdapter adapter = new AttractionAdapter(getActivity(), hikesArray, R.color.category_hiking);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
+
+
+        return rootView;
 
     }
 }

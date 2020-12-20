@@ -9,52 +9,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    //setting up the events view
-    <FrameLayout
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/category_events">
-        <TextView
-            android:id="@+id/events"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/attr_events"/>
-    </FrameLayout>
-
-    //setting up the hiking view
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/category_hiking">
-        <TextView
-            android:id="@+id/hikes"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/attr_hiking"/>
-    </FrameLayout>
-
-    //setting up the parks view
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/category_parks">
-        <TextView
-            android:id="@+id/parks"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/attr_parks"/>
-    </FrameLayout>
-
-    //setting up the restaurants view
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/category_restaurants">
-        <TextView
-            android:id="@+id/restaurants"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/attr_restaurants"/>
-    </FrameLayout>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

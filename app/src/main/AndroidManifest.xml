@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bayareatours">
+    package="com.example.bayareatours_fragments">
 
     <application
         android:allowBackup="true"
@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EventsActivity"
+        <activity android:name="com.example.bayareatours_fragments.EventsActivity"
             android:label="Bay Area Events"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".HikingActivity"
+            android:parentActivityName="com.example.bayareatours_fragments.MainActivity"/>
+        <activity android:name="com.example.bayareatours_fragments.HikingActivity"
             android:label="Hiking Locations - Bay Area"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ParksActivity"
+            android:parentActivityName="com.example.bayareatours_fragments.MainActivity"/>
+        <activity android:name="com.example.bayareatours_fragments.ParksActivity"
             android:label="Bay Area Parks"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".RestaurantActivity"
+            android:parentActivityName="com.example.bayareatours_fragments.MainActivity"/>
+        <activity android:name="com.example.bayareatours_fragments.RestaurantActivity"
             android:label="Bay Area Restaurants"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MainActivity">
+            android:parentActivityName="com.example.bayareatours_fragments.MainActivity"/>
+        <activity android:name="com.example.bayareatours_fragments.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

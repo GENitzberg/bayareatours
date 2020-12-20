@@ -1,4 +1,4 @@
-package com.example.bayareatours;
+package com.example.bayareatours_fragments;
 
 import org.junit.Test;
 
